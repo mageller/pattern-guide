@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'patterns/index'
+
+  root 'patterns#index'
+
+  get 'atoms' => 'patterns#atoms'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

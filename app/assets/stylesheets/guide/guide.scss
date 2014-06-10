@@ -1,0 +1,82 @@
+#sg-wrapper {
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 5em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+#sg-container {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#sg-viewport {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+header {
+  z-index: 1;
+}
+.sg-pattern {
+  margin-bottom: 2em;
+  position: relative;
+  &:before {
+    content: " ";
+    display: table;
+  }
+}
+
+.sg-pattern-head {
+  margin: 2em 0;
+  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-size: 70%;
+  font-weight: normal;
+  padding: .2em 0;
+  border-bottom: 1px solid gray;
+}
+
+[role=main] {
+  padding: 0.5em 0.5em 2em;
+  overflow: hidden;
+  max-width: 72em;
+  margin: 0 auto;
+}
+
+.sg-colors {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    float: left;
+    width: 5em;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 0.3em;
+    margin: 0 0.2em 0.2em 0;
+  }
+}
+.sg-swatch {
+  width: 100%;
+  height: 4em;
+  margin-bottom: 0.2em;
+  display: block;
+}
+.sg-label { line-height: 1;}
