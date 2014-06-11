@@ -3,7 +3,10 @@ Rails.application.routes.draw do
 
   root 'patterns#index'
 
-  get 'atoms' => 'patterns#atoms'
+  get '/:brand', to: 'patterns#index', as: 'patterns_brand'
+
+  get '/patterns/atoms', to: 'patterns#atoms', as: 'atoms_global'
+  get '/patterns/:brand/atoms', to: 'patterns#atoms', as: 'atoms'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'franchiseregular';
+    src: font-url('franchise-bold-webfont.eot');
+    src: font-url('franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('franchise-bold-webfont.woff') format('woff'),
+         font-url('franchise-bold-webfont.ttf') format('truetype'),
+         font-url('franchise-bold-webfont.svg#franchiseregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'digital_display';
+    src: font-url('7sdd-webfont.eot');
+    src: font-url('7sdd-webfont.eot?#iefix') format('embedded-opentype'),
+         font-url('7sdd-webfont.woff') format('woff'),
+         font-url('7sdd-webfont.ttf') format('truetype'),
+         font-url('7sdd-webfont.svg#7_segmental_digital_displayRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.font-secondary {
+  font-family: 'franchiseregular', Arial, sans-serif;
+  font-size: 1.4em;
+  letter-spacing: -0.01em;
+}

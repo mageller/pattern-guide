@@ -1,9 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>PatternGuide</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    '/assets/global-branding', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    '/assets/guide/guide', media: 'all', 'data-turbolinks-track' => true %>
+  <% if @brand == "tera" %>
+  <%= stylesheet_link_tag    '/assets/tera-branding', media: 'all', 'data-turbolinks-track' => true %>
+  <% elsif @brand == "zmr" %>
+  <%= stylesheet_link_tag    '/assets/zmr-branding', media: 'all', 'data-turbolinks-track' => true %>
+  <% end %>
   <%= csrf_meta_tags %>
 </head>
 <body>

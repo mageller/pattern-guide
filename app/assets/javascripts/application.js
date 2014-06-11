@@ -14,7 +14,4 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require eme/pattern.guide
-//= require_tree .
-$(function(){
-  PatternGuide.init();
-});
+//= require_directory .

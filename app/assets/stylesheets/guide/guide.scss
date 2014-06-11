@@ -2,7 +2,7 @@
   text-align: center;
   width: 100%;
   position: fixed;
-  top: 5em;
+  top: 2em;
   bottom: 0;
   left: 0;
   right: 0;
@@ -41,15 +41,21 @@ header {
     content: " ";
     display: table;
   }
+  &:after {
+    clear: both;
+    content: " ";
+    display: table;
+  }
 }
 
 .sg-pattern-head {
   margin: 2em 0;
-  font-family: "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   font-size: 70%;
   font-weight: normal;
   padding: .2em 0;
   border-bottom: 1px solid gray;
+  color: gray;
 }
 
 [role=main] {
@@ -80,3 +86,51 @@ header {
   display: block;
 }
 .sg-label { line-height: 1;}
+
+.sg-header {
+  background: #222222;
+  color: #fff;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+
+  a {
+    font-size: 70%;
+    color: #dddddd;
+    text-decoration: none;
+    display: block;
+    line-height: 1em;
+    padding: 1em;
+    transition: all 0.15s ease-out; 
+
+    &:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+.sg-nav {
+  z-index: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sg-nav > li {
+  border-bottom: 0px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  float: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.demo-animate {
+  background: #ddd;
+  padding: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}

@@ -3,19 +3,62 @@
     <h2 class="sg-pattern-head">Colors</h2>
     <div class="sg-pattern-body">
       <ul class="sg-colors">
+        <% @colors.each do |color| %>
         <li>
-          <span class="sg-swatch" style="background: #ff0000;"></span>
-          <span class="sg-label">#ff0000</span>
+          <span class="sg-swatch" style="<%= "background: ##{color[:hex]}" %>"></span>
+          <span class="sg-label"><%= "##{color[:hex].upcase}" %><br/><%= "#{color[:label]}" %></span>
         </li>
-        <li>
-          <span class="sg-swatch" style="background: #00ff00;"></span>
-          <span class="sg-label">#00ff00</span>
-        </li>
-        <li>
-          <span class="sg-swatch" style="background: #0000ff;"></span>
-          <span class="sg-label">#0000ff</span>
-        </li>
+        <% end %>
       </ul>
+    </div>
+  </div>
+  <div id="atoms-fonts" class="sg-pattern">
+    <h2 class="sg-pattern-head">Fonts</h2>
+    <div class="sg-pattern-body">
+    <% if @brand == "global" %>
+      <p>Primary font: Arial, sans-serif;</p>
+      <p><em>Primary font italic: Arial, sans-serif;</em></p>
+      <p><strong>Primary font bold: Arial, sans-serif;</strong></p>
+      <p><strong><em>Primary font bold-italic: Arial, sans-serif;</em></strong></p>
+    <% elsif @brand == "tera" %>
+      <p>Primary font: "Arial", sans-serif;</p>
+      <p><em>Primary font italic: Arial, sans-serif;</em></p>
+      <p><strong>Primary font bold: Arial, sans-serif;</strong></p>
+      <p><strong><em>Primary font bold-italic: Arial, sans-serif;</em></strong></p>
+      <p class="font-secondary">Secondary font: 'serif6_beta_rgregular', Times, serif;</p>
+      <p class="font-secondary"><em>Secondary font italic: 'serif6_beta_rgitalic', Times, serif;</em></p>
+      <p class="font-secondary"><strong>Secondary font bold: 'serif6_beta_rgbold', Times, serif;</strong></p>
+    <% elsif @brand == "zmr" %>
+      <p>Primary font: Arial, sans-serif;</p>
+      <p><em>Primary font italic: Arial, sans-serif;</em></p>
+      <p><strong>Primary font bold: Arial, sans-serif;</strong></p>
+      <p><strong><em>Primary font bold-italic: "Arial", sans-serif;</em></strong></p>
+      <p class="font-secondary">Secondary font: "franchiseregular", Arial, sans-serif;</p>
+      <p class="font-secondary"><em>Secondary font italic: "franchiseregular", Arial, sans-serif;</em></p>
+      <p class="font-secondary"><strong>Secondary font bold: "franchiseregular", Arial, sans-serif;</strong></p>
+      <p class="font-secondary"><strong><em>Secondary font bold-italic: "franchiseregular", Arial, sans-serif;</em></strong></p>
+    <% end %>
+    </div>
+  </div>
+  <div id="atoms-animations" class="sg-pattern">
+    <h2 class="sg-pattern-head">Animations</h2>
+    <div class="sg-pattern-body">
+      <div class="demo-animate animate-fade"><strong>Fade:</strong> Duration: 0.3s Easing: ease-in-out (Hover to see effect)</div>
+      <div class="demo-animate animate-move">
+        <div class="demo-shape"></div>
+        <strong>Movement:</strong> Duration: 0.8s Easing: ease-in-out (Hover to see effect)
+      </div>
+    </div>
+  </div>
+  <div id="atoms-headings" class="sg-pattern">
+    <h2 class="sg-pattern-head">Headings</h2>
+    <div class="sg-pattern-body">
+      <h1>Heading Level 1</h1>
+      <h2>Heading Level 2</h2>
+      <h3>Heading Level 3</h3>
+      <h4>Heading Level 4</h4>
+      <h5>Heading Level 5</h5>
+      <h6>Heading Level 6</h6>
     </div>
   </div>
 </div>

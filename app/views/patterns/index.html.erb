@@ -1,14 +1,24 @@
-<header>
-    <ul>
-      <li><a href="#">global</a></li>
-      <li><a href="#"><em>TERA</em></a></li>
-      <li><a href="#"><em>ZMR</em></a></li>
-    </ul>
-  </header>
-  <div id="sg-wrapper">
-    <div id="sg-container">
-      <iframe id="sg-viewport" sandbox="allow-same-origin allow-scripts"
-      src="/atoms"
-      ></iframe>
-    </div>
+<header class="sg-header" role="banner">
+  <ul class="sg-nav">
+    <li><a href="patterns/atoms">Global</a></li>
+    <li><a href="patterns/tera/atoms"><em>TERA</em></a></li>
+    <li><a href="patterns/zmr/atoms"><em>ZMR</em></a></li>
+  </ul>
+</header>
+<div id="sg-wrapper">
+  <div id="sg-container">
+    <iframe id="sg-viewport" sandbox="allow-same-origin allow-scripts"
+    <% if @brand == "" %>
+      src="<%= "/patterns/atoms" %>"
+    <% else %>
+      src="<%= "/patterns/#{@brand}/atoms" %>"
+    <% end %>
+    ></iframe>
   </div>
+</div>
+<%= javascript_include_tag '/assets/eme/pattern.guide', 'data-turbolinks-track' => true %>
+<script type="text/javascript">
+(function() {
+  PatternGuide.init();
+})();
+</script>
