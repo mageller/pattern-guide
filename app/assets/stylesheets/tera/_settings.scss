@@ -1,6 +1,80 @@
+/***** Typography *****/
 $headingFontFamily: 'serif6_beta_rgbold', Times, serif;
+$largeButtonFontFamily: 'serif6_beta_rgregular', Times, serif;
 $bodyFontFamily: Arial, Helvetica, sans-serif;
 
+/***** Colors *****/
 // Text Colors
 $textColor: #bbb;
 $headingColor: #ddd;
+// Blues
+$lightBlue: #0297FF;
+$midBlue: #0875d1;
+$darkBlue: #0c5aad;
+// Grays
+$lightGray: #4b4f56;
+$midGray: #30343b;
+$darkGray: #1d2128;
+// Golds
+$lightGold: #dfa013;
+$midGold: #b26a0c;
+$darkGold: #613a04;
+// Reds
+$lightRed: #960909;
+$midRed: #820707;
+$darkRed: #530202;
+// Greens
+$lightGreen: #1c9509;
+$midGreen: #198607;
+$darkGreen: #115f02;
+// Oranges
+$lightOrange: #ff9400;
+$midOrange: #c36e00;
+$darkOrange: #663d00;
+// Baby Blues
+$lightBabyBlue: #68a7f6;
+$midBabyBlue: #4387ed;
+$darkBabyBlue: #1e54b9;
+// Purples
+$lightPurple: #7b3aff;
+$midPurple: #491bdb;
+$darkPurple: #331180;
+// Peaches
+$lightPeach: #ff6e42;
+$midPeach: #bf5134;
+$darkPeach: #803919;
+// Pinks
+$lightPink: #e84485;
+$midPink: #e82b7d;
+$darkPink: #e2116f;
+
+$shinyEdge: rgba(#fff, .5) !default;
+$darkEdge: rgba(#000, .2) !default;
+
+/***** Images *****/
+$socials-sprite: url('http://tera-cdn1.enmasse-game.com/assets/social-sprite.png');
+$image-sprite: url('http://tera-2.edge.enmasse-game.com/assets/image-sprite.png');
+$icon-loading: url('https://store-cdn1.enmasse-game.com/assets/loading.gif');
+$race-symbols: url('http://tera-cdn2.enmasse-game.com/assets/new/race-symbols.png');
+$class-symbols: url('http://tera-cdn3.enmasse-game.com/assets/new/class-symbols.png');
+$store-promo: url('http://store-cdn2.enmasse-game.com/assets/store-promo.jpg');
+$bgMain: "http://tera-3.edge.enmasse-game.com/assets/background-slate.jpg";
+$bgSprite: "http://tera-2.edge.enmasse-game.com/assets/image-sprite-90716d756c7cb11d684a1e29b268955d.png";
+$bgNavSprite: "http://tera-2.edge.enmasse-game.com/assets/nav-sprite.png";
+
+/***** Nav Bar Settings *****/
+$navBarHeight: 90px;
+$navFlyoutBaseWidth: 275px;
+
+/***** Text Direction Settings *****/
+$defaultFloat: left;
+$defaultOpposite: right;
+
+/***** Screen break points *****/
+$smallScreen: 768px;
+$largeScreen: 1140px;
+
+$small: "only screen and (max-width: "#{$smallScreen}")";
+$medium: "only screen and (min-width: "#{$smallScreen + 1}") and (max-width: "#{$largeScreen - 1}")";
+$mediumDown: "only screen and (max-width: "#{$largeScreen - 1}")";
+$screen: "only screen and (min-width: "#{$largeScreen}")";

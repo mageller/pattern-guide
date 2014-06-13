@@ -27,8 +27,12 @@ h3 {
 }
 
 p {
-  margin-bottom: 16px;
   line-height: 1.6em;
+  margin-bottom: 1em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 small {
@@ -45,8 +49,11 @@ abbr {
 }
 
 blockquote {
-  padding: 5px 10px;
-  margin: 0 0 21px;
+  font-style: italic;
+  border-left: 1px solid gray;
+  color: gray;
+  padding-left: 1em;
+  margin-bottom: 1em;
 }
 
 blockquote:before,
@@ -83,6 +90,8 @@ ol {
 }
 
 ul {
+  margin: 0 0 21px 40px;
+  
   ul, ol {
     margin: 0 0 0 30px;
   }

@@ -1,3 +1,17 @@
+body {
+  background: #000;
+  color: $textColor;
+  font-family: $bodyFontFamily;
+}
+
+a {
+  color: $lightBlue;
+  text-decoration: none;
+  &:hover {
+    color: $lightBlue;
+    text-decoration: underline;
+  }
+}
 h1,
 h2,
 h3,
@@ -13,9 +27,55 @@ h3 {
   font-family: $headingFontFamily;
 }
 
-
-body {
-  background: #000;
+h4 a, h5 a, h6 a {
   color: $textColor;
-  font-family: $bodyFontFamily;
+  &:after {
+    content: "";
+    display: inline-block;
+    background: url($bgSprite) no-repeat -404px -467px;
+    width: 17px;
+    height: 13px;
+    margin-left: 5px;
+  }
+}
+
+.blog_post header h1 a, .blog_post header h2 a {
+  color: $headingColor;
+}
+
+code {
+  font-weight: bold;
+  background: #ff9;
+}
+
+abbr {
+  border-bottom: 1px solid $textColor;
+}
+
+strong, b {
+  color: #eee;
+}
+
+blockquote {
+  padding: 5px 10px;
+  margin: 0 0 21px;
+  border: 3px double rgba(0, 0, 0, 0.5);
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba($darkGray, 0.5);
+
+  p {
+    color: $headingColor;
+  }
+
+  .citation img {
+    float: right;
+  }
+}
+
+dl dd {
+  border-left: 2px solid $midGray;
+}
+
+.text-align-center {
+  text-align: center;
 }

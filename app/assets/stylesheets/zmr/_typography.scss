@@ -16,3 +16,62 @@ h2 {
 h3 {
   font-size: 35px;
 }
+
+p {
+  line-height: 2em;
+}
+
+a {
+  color: #c70504;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: #52524e;
+  }
+}
+
+table {
+  margin-bottom: 20px;
+
+  &.full {
+    width: 100%;
+  }
+
+  th {
+    font-size: 16px;
+    color: #fff;
+    background: #862427;
+    padding: 8px 10px 9px;
+    line-height: 1.4em;
+    text-align: left;
+    font-weight: normal;
+  }
+  thead tr {
+    border-bottom: 2px solid #611a1d;
+  }
+  td {
+    font-size: 14px;
+    padding: 8px 10px 9px;
+    line-height: 1.4em;
+    text-align: left;
+  }
+  tbody tr:nth-child(odd) {
+    background: rgba(#753900, 0.15);
+    border-bottom: 1px solid rgba(#999999, 0.2);
+  }
+  tbody tr:nth-child(even) {
+    background: rgba(#ffffff, 0.4);
+    border-bottom: 1px solid rgba(#999999, 0.2);
+  }
+}
+
+.show .page-content {
+  ul {
+    list-style: disc;
+    margin: 0px 0px 20px 0px;
+
+    li {
+      margin-left: 2.2em;
+    }
+  }
+}

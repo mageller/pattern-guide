@@ -13,7 +13,7 @@ PatternGuide = {
 
   bindUIActions: function() {
     s.patternList.on("click", 'li a', function(e) {
-      e.preventDefault();
+      // e.preventDefault();
       PatternGuide.loadPattern($(this).attr('href'));
     });
   },

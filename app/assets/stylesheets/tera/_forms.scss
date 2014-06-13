@@ -1,0 +1,103 @@
+.form-border {
+  border: 2px solid $lightGray;
+
+  legend {
+    margin: 0 0 0 10px;
+    padding: 0 4px;
+  }
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=date],
+select,
+textarea {
+  min-width: 250px;
+  font-size: 16px;
+  padding: 5px;
+  margin: 0;
+  border-radius: 3px;
+  box-shadow: 0 0 3px #000;
+
+  border: 2px solid $lightGray;
+  outline: none;
+
+  &.active,
+  &:active,
+  &.focus,
+  &:focus,
+  &.focus.hover,
+  &:focus:hover {
+    border: 2px solid $lightBlue;
+  }
+
+  &.hover,
+  &:hover {
+    border: 2px solid $midBlue;
+  }
+
+  &.disabled,
+  &:disabled {
+    opacity: .8;
+    cursor: normal;
+    &.hover,
+    &:hover { border: 2px solid $lightGray; }
+  }
+}
+
+input[type=checkbox],
+input[type=radio] {
+  width: 16px;
+  height: 16px;
+}
+
+input[type=checkbox]+label,
+input[type=radio]+label {
+  display: inline;
+}
+
+textarea {
+  min-height: 5em;
+  width: 100%;
+}
+
+fieldset {
+  padding: 10px;
+
+  div {
+    padding: 10px;
+  }
+}
+
+form .error {
+  border: 2px solid $lightRed;
+  background-color: rgba($darkRed, .2);
+  color: lighten($lightRed, 30%);
+
+  .error-msg:before {
+    @extend .tif;
+    content: '\38';
+  }
+
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  input[type=url],
+  input[type=tel],
+  input[type=number],
+  input[type=date],
+  select,
+  textarea {
+    border: 2px solid $lightRed;
+  }
+}
+
+button::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}
